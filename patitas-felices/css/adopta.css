@@ -1,0 +1,101 @@
+/* ===== Página Adopta (catálogo) ===== */
+
+.encabezado-adopta {
+  background: var(--verde-claro);
+  padding: 48px 0;
+}
+
+.encabezado-adopta h1 {
+  font-size: 36px;
+  line-height: 1.15;
+  margin-bottom: 16px;
+}
+
+/* Filtros: solo se ven (no filtran nada, el enunciado no pide lógica) */
+.filtros {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.filtros label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.filtros select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bfb5a8;
+  border-radius: 10px;
+  background: var(--blanco);
+  font-family: var(--fuente);
+  font-size: 16px;
+}
+
+.filtros select:hover,
+.filtros select:focus {
+  border-color: var(--naranja);
+}
+
+/* Cuadrícula de tarjetas con Grid */
+.grilla-animales {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Cómo adoptar: 3 pasos */
+.pasos {
+  background: var(--blanco);
+}
+
+.lista-pasos {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.paso .numero {
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--naranja);
+}
+
+/* ===== Media queries ===== */
+
+@media (min-width: 600px) {
+  .filtros {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .grilla-animales {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .lista-pasos {
+    flex-direction: row;
+  }
+
+  .paso {
+    flex: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .encabezado-adopta h1 {
+    font-size: 52px;
+  }
+
+  .filtros {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .grilla-animales {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

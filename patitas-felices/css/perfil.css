@@ -1,0 +1,348 @@
+/* ===== Perfil del animal seleccionado =====
+   perfil.html tiene una tarjeta por cada animal. Todas están escondidas y solo se muestra
+   la que coincide con el # de la dirección (por ejemplo perfil.html#luna).
+   Eso lo hace :target, que sirve para mostrar el elemento al que apunta el enlace. */
+
+.perfil-animal {
+  display: none;
+}
+
+.perfil-animal:target {
+  display: block;
+}
+
+/* Mensaje que se ve solo cuando no se ha elegido ningún animal */
+.sin-seleccion {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.sin-seleccion h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.sin-seleccion p {
+  margin-bottom: 20px;
+}
+
+.perfil-animal:target ~ .sin-seleccion {
+  display: none;
+}
+
+.volver {
+  display: inline-block;
+  margin-top: 24px;
+  font-weight: bold;
+  color: var(--naranja);
+  text-decoration: none;
+}
+
+.volver:hover {
+  text-decoration: underline;
+}
+
+/* Tarjeta principal: foto + resumen del animal */
+.perfil-card {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0 40px;
+  background: var(--blanco);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 6px 24px rgba(45, 58, 51, 0.18);
+}
+
+.perfil-foto {
+  position: relative;
+}
+
+.perfil-foto img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  background: var(--verde-claro);
+}
+
+/* Etiqueta de estado encima de la foto */
+.insignia {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.perfil-resumen {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+}
+
+.perfil-resumen h1 {
+  font-size: 44px;
+  line-height: 1.05;
+}
+
+.frase {
+  padding-left: 14px;
+  border-left: 4px solid var(--naranja);
+  font-size: 18px;
+  font-style: italic;
+  color: var(--gris);
+}
+
+/* Datos rápidos: 4 cuadritos de colores en Grid */
+.datos-rapidos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.dato {
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: var(--durazno);
+}
+
+.dato:nth-child(2),
+.dato:nth-child(3) {
+  background: var(--verde-claro);
+}
+
+.dato span {
+  display: block;
+  font-size: 13px;
+  color: var(--gris);
+}
+
+.dato strong {
+  font-size: 20px;
+}
+
+/* Rasgos de personalidad: etiquetas redondeadas */
+.rasgos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  list-style: none;
+}
+
+.rasgos li {
+  padding: 6px 14px;
+  border: 2px solid var(--naranja);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--naranja);
+}
+
+.boton-grande {
+  padding: 16px 24px;
+  font-size: 18px;
+}
+
+.nota {
+  font-size: 14px;
+  color: var(--gris);
+}
+
+.aviso-adoptado {
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--durazno);
+  font-weight: bold;
+  color: var(--naranja-oscuro);
+}
+
+/* Historia + cajas de salud y hogar ideal */
+.detalle {
+  background: var(--blanco);
+}
+
+.detalle-columnas {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.historia h2 {
+  margin-bottom: 12px;
+}
+
+.historia p {
+  margin-bottom: 12px;
+  color: var(--gris);
+}
+
+.cajas {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.caja {
+  padding: 24px;
+  border-radius: 16px;
+}
+
+.caja h2 {
+  margin-bottom: 12px;
+  font-size: 24px;
+}
+
+.caja-salud {
+  background: var(--verde-claro);
+}
+
+.caja-hogar {
+  background: var(--durazno);
+}
+
+.lista-check {
+  list-style: none;
+}
+
+.lista-check li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+/* Banda de llamada a la acción */
+.banda {
+  background: var(--durazno);
+  padding: 40px 0;
+}
+
+.banda .contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+/* Sugerencias del final: 3 animales.
+   En celular cada una es una fila (foto a la izquierda y datos a la derecha);
+   desde tablet son 3 tarjetas en columnas. */
+.sugerencias {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+.sugerencia {
+  display: flex;
+  background: var(--blanco);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+  text-decoration: none;
+}
+
+.sugerencia:hover {
+  transform: translateY(-4px);
+}
+
+.sugerencia img {
+  flex: none;
+  width: 120px;
+  object-fit: cover;
+  background: var(--verde-claro);
+}
+
+.sugerencia-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px;
+}
+
+.sugerencia-info h3 {
+  font-size: 22px;
+}
+
+.sugerencia-link {
+  margin-top: 4px;
+  font-weight: bold;
+  color: var(--naranja);
+}
+
+.sugerencia-link::after {
+  content: " →";
+}
+
+/* ===== Media queries ===== */
+
+@media (min-width: 600px) {
+  .perfil-foto img {
+    height: 440px;
+  }
+
+  .sugerencia img {
+    width: 160px;
+  }
+}
+
+@media (min-width: 768px) {
+  .perfil-card {
+    flex-direction: row;
+  }
+
+  .perfil-foto,
+  .perfil-resumen {
+    flex: 1;
+  }
+
+  .perfil-foto img {
+    height: 100%;
+    min-height: 460px;
+  }
+
+  .detalle-columnas {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .historia {
+    flex: 3;
+  }
+
+  .cajas {
+    flex: 2;
+  }
+
+  .banda .contenedor {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sugerencias {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sugerencia {
+    flex-direction: column;
+  }
+
+  .sugerencia img {
+    width: 100%;
+    height: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .perfil-resumen {
+    padding: 40px;
+  }
+
+  .perfil-resumen h1 {
+    font-size: 60px;
+  }
+
+  .perfil-foto img {
+    min-height: 560px;
+  }
+}

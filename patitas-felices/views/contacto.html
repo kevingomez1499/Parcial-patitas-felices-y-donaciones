@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · Patitas Felices</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/iconos.css">
+  <link rel="stylesheet" href="../css/contacto.css">
+</head>
+<body>
+
+  <!-- Encabezado con logo y menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="../index.html"><span class="icono icono-huella" aria-hidden="true"></span> Patitas Felices</a>
+
+      <!-- Menú hamburguesa: el checkbox está escondido y el label (las 3 rayitas) lo marca o desmarca -->
+      <input type="checkbox" id="menu-check" class="menu-check" aria-label="Abrir o cerrar el menú">
+      <label for="menu-check" class="hamburguesa"><span></span><span></span><span></span></label>
+
+      <nav class="menu-nav">
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="adopta.html">Adopta</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="contacto.html">Voluntariado</a></li>
+            <li><a href="contacto.html" class="activo">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="intro-contacto">
+      <div class="contenedor">
+        <p class="etiqueta">ESTAMOS AL OTRO LADO</p>
+        <h1>Las buenas historias empiezan con un hola.</h1>
+        <p class="texto-gris">¿Quieres adoptar, ayudar o conocernos mejor? Cuéntanos. Cada mensaje es una oportunidad para hacer algo bonito.</p>
+      </div>
+    </section>
+
+    <div class="contenedor contacto-contenido">
+
+      <!-- Formulario (no envía nada, es una maqueta) -->
+      <section class="formulario">
+        <h2>Te escuchamos.</h2>
+        <p class="texto-gris" style="margin-bottom:16px">Los campos con <span class="obligatorio">*</span> son obligatorios.</p>
+        <form action="#" method="get">
+          <div class="fila">
+        <div class="campo">
+          <label for="nombre">Nombre <span class="obligatorio">*</span></label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          <p class="mensaje-error">Escribe tu nombre.</p>
+        </div>
+        <div class="campo">
+          <label for="apellidos">Apellidos <span class="obligatorio">*</span></label>
+          <input type="text" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+          <p class="mensaje-error">Escribe tus apellidos.</p>
+        </div>
+          </div>
+          <div class="fila">
+        <div class="campo">
+          <label for="ciudad">Ciudad <span class="obligatorio">*</span></label>
+          <input type="text" id="ciudad" name="ciudad" placeholder="Tu ciudad" required>
+          <p class="mensaje-error">Escribe tu ciudad.</p>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico <span class="obligatorio">*</span></label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+          <p class="mensaje-error">Escribe un correo válido, por ejemplo nombre@ejemplo.com.</p>
+        </div>
+          </div>
+
+          <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+            <p class="ayuda">Opcional.</p>
+          </div>
+
+          <div class="campo">
+            <label for="consulta">Tipo de consulta <span class="obligatorio">*</span></label>
+            <select id="consulta" name="consulta" required>
+              <option value="">Selecciona una opción</option>
+              <option>Adopción</option>
+              <option>Donación</option>
+              <option>Voluntariado</option>
+              <option>Información general</option>
+              <option>Otro</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Mensaje <span class="obligatorio">*</span></label>
+            <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos cómo podemos ayudarte…" required></textarea>
+          </div>
+
+          <button class="boton boton-principal" type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+
+      <!-- Información de contacto directo y redes -->
+      <aside class="datos">
+        <h2>Cerca, también por aquí.</h2>
+        <p><strong><span class="icono icono-correo" aria-hidden="true"></span> Correo</strong><br><a href="mailto:hola@patitasfelices.org">hola@patitasfelices.org</a></p>
+        <p><strong><span class="icono icono-telefono" aria-hidden="true"></span> Teléfono</strong><br><a href="tel:+34910000000">+34 910 000 000</a></p>
+        <p><strong><span class="icono icono-reloj" aria-hidden="true"></span> Atención al público</strong><br>Lunes a viernes · 10:00–18:00</p>
+        <p><strong>Síguenos</strong></p>
+        <div class="redes">
+          <a href="#">Instagram</a>
+          <a href="#">Facebook</a>
+          <a href="#">YouTube</a>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Ejemplo de cómo se ven los estados de error y éxito -->
+    <section class="contenedor ejemplo-estados">
+      <h2>Ejemplo de estados del formulario</h2>
+      <div class="fila">
+        <div class="campo">
+          <label for="ej-normal">Estado normal</label>
+          <input type="email" id="ej-normal" placeholder="nombre@ejemplo.com">
+        </div>
+        <div class="campo error">
+          <label for="ej-error">Estado error (.error)</label>
+          <input type="email" id="ej-error" value="clara@">
+          <p class="mensaje-error">Escribe un correo válido, por ejemplo nombre@ejemplo.com.</p>
+        </div>
+        <div class="campo success">
+          <label for="ej-ok">Estado éxito (.success)</label>
+          <input type="email" id="ej-ok" value="clara@ejemplo.com">
+          <p class="mensaje-ok">Correo correcto.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p class="pie-nombre">Patitas Felices</p>
+      <p>© 2026 Patitas Felices</p>
+      <p><a href="mailto:hola@patitasfelices.org">hola@patitasfelices.org</a></p>
+      <p><a href="#">Desarrollo: Estudio Huella</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

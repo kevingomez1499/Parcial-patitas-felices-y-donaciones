@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patitas Felices · Fundación de rescate animal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/iconos.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+  <!-- Encabezado con logo y menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="index.html"><span class="icono icono-huella" aria-hidden="true"></span> Patitas Felices</a>
+
+      <!-- Menú hamburguesa: el checkbox está escondido y el label (las 3 rayitas) lo marca o desmarca -->
+      <input type="checkbox" id="menu-check" class="menu-check" aria-label="Abrir o cerrar el menú">
+      <label for="menu-check" class="hamburguesa"><span></span><span></span><span></span></label>
+
+      <nav class="menu-nav">
+        <ul class="menu">
+            <li><a href="index.html" class="activo">Inicio</a></li>
+            <li><a href="views/adopta.html">Adopta</a></li>
+            <li><a href="views/donaciones.html">Donaciones</a></li>
+            <li><a href="views/contacto.html">Voluntariado</a></li>
+            <li><a href="views/contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. Banner principal -->
+    <section class="banner">
+      <div class="contenedor">
+        <div class="banner-texto">
+          <p class="etiqueta">UN HOGAR CAMBIA SU MUNDO</p>
+          <h1>El amor tiene cuatro patas.</h1>
+          <p class="texto-gris">Y muchas ganas de encontrarte. Rescatamos, cuidamos y acompañamos a cada animal hacia un nuevo comienzo.</p>
+          <div class="banner-botones">
+            <a class="boton boton-principal" href="views/adopta.html">Adopta</a>
+            <a class="boton boton-secundario" href="#mision">Conócenos</a>
+          </div>
+        </div>
+        <img src="storage/img/luna.jpg" alt="Luna, perra mestiza sentada entre flores">
+      </div>
+    </section>
+
+    <!-- 2. Carrusel de fotos (cambia cada 3 segundos con CSS) -->
+    <section class="carrusel-seccion seccion">
+      <div class="contenedor">
+        <p class="etiqueta">POSTALES DEL REFUGIO</p>
+        <h2 class="titulo">Cada día, un poquito más felices.</h2>
+        <div class="carrusel">
+          <div class="carrusel-pista">
+            <div class="foto">
+              <img src="storage/img/carrusel-1.jpg" alt="Voluntaria paseando a un perro">
+              <p>Un paseo. Mil cosas por descubrir.</p>
+            </div>
+            <div class="foto">
+              <img src="storage/img/carrusel-2.jpg" alt="Persona acariciando a un gato">
+              <p>El cariño también cuida.</p>
+            </div>
+            <div class="foto">
+              <img src="storage/img/carrusel-3.jpg" alt="Dos voluntarias con dos perros">
+              <p>Aquí nadie camina solo.</p>
+            </div>
+            <!-- Copia de la primera foto para que el movimiento vuelva al inicio sin saltos -->
+            <div class="foto" aria-hidden="true">
+              <img src="storage/img/carrusel-1.jpg" alt="">
+              <p>Un paseo. Mil cosas por descubrir.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Labor de la fundación -->
+    <section class="labor seccion">
+      <div class="contenedor">
+        <p class="etiqueta">UNA SEGUNDA OPORTUNIDAD</p>
+        <h2 class="titulo">Cuidar es el primer paso. Encontrar hogar, el siguiente.</h2>
+        <p class="texto-gris">Somos una fundación de rescate animal. Escuchamos lo que cada uno necesita y buscamos familias que quieran acompañarlos a su ritmo.</p>
+
+        <div class="tarjetas-labor">
+          <div class="tarjeta-labor">
+            <span class="icono icono-casa" aria-hidden="true"></span>
+            <h3>Rescatamos</h3>
+            <p class="texto-gris">Un lugar seguro para volver a confiar.</p>
+          </div>
+          <div class="tarjeta-labor">
+            <span class="icono icono-cruz" aria-hidden="true"></span>
+            <h3>Cuidamos</h3>
+            <p class="texto-gris">Atención veterinaria y cariño diario.</p>
+          </div>
+          <div class="tarjeta-labor">
+            <span class="icono icono-huella" aria-hidden="true"></span>
+            <h3>Acompañamos</h3>
+            <p class="texto-gris">Conocemos su carácter y sus tiempos.</p>
+          </div>
+          <div class="tarjeta-labor">
+            <span class="icono icono-corazon" aria-hidden="true"></span>
+            <h3>Conectamos</h3>
+            <p class="texto-gris">Familias y animales que encajan.</p>
+          </div>
+        </div>
+
+        <!-- Enlaces internos -->
+        <div class="enlaces">
+          <a class="boton boton-principal" href="views/adopta.html">Adopta</a>
+          <a class="boton boton-secundario" href="views/donaciones.html">Donaciones</a>
+          <a class="boton boton-secundario" href="views/contacto.html">Voluntariado</a>
+          <a class="boton boton-secundario" href="views/contacto.html">Contacto</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Testimonios -->
+    <section class="seccion">
+      <div class="contenedor">
+        <p class="etiqueta">CUANDO LLEGAN A CASA</p>
+        <h2 class="titulo">Ellos lo cuentan mejor.</h2>
+        <div class="testimonios">
+          <div class="testimonio">
+            <p>«No necesitaba una casa perfecta. Necesitaba la nuestra. Ahora no imaginamos el sofá sin él.»</p>
+            <span>Clara y Dani · familia de Bruno</span>
+          </div>
+          <div class="testimonio">
+            <p>«Nos ayudaron a entender sus tiempos. El día que se durmió a nuestro lado, supimos que ya estaba en casa.»</p>
+            <span>Lucía · familia de Coco</span>
+          </div>
+        </div>
+        <p class="texto-gris"><small>Testimonios de ejemplo para esta maqueta.</small></p>
+      </div>
+    </section>
+
+    <!-- 5. Misión y visión (lado a lado en pantallas grandes) -->
+    <section class="seccion" id="mision">
+      <div class="contenedor mision-vision">
+        <div class="bloque">
+          <span class="icono icono-corazon" aria-hidden="true"></span>
+          <p class="etiqueta">NUESTRA MISIÓN</p>
+          <h2>Devolverles la confianza.</h2>
+          <p class="texto-gris">Rescatar y cuidar animales en situación de vulnerabilidad, promoviendo adopciones responsables y un trato digno.</p>
+        </div>
+        <div class="bloque" id="vision">
+          <span class="icono icono-sol" aria-hidden="true"></span>
+          <p class="etiqueta">NUESTRA VISIÓN</p>
+          <h2>Un futuro sin abandono.</h2>
+          <p class="texto-gris">Una comunidad donde cada animal tenga un hogar seguro y donde el respeto se aprenda, se comparta y se practique.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Galería -->
+    <section class="seccion">
+      <div class="contenedor">
+        <p class="etiqueta">VIDA EN EL REFUGIO</p>
+        <h2 class="titulo">Lo extraordinario de lo cotidiano.</h2>
+        <div class="galeria">
+          <img src="storage/img/galeria-1.jpg" alt="Gata dormida sobre una manta">
+          <img src="storage/img/galeria-2.jpg" alt="Dos perros jugando en el jardín">
+          <img src="storage/img/galeria-3.jpg" alt="Voluntaria abrazando a un gato">
+          <img src="storage/img/galeria-4.jpg" alt="Una mano sostiene la patita de un perro">
+        </div>
+        <div class="cierre">
+          <h2>Tu historia con ellos puede empezar hoy.</h2>
+          <a class="boton boton-principal" href="views/adopta.html">Quiero adoptar</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p class="pie-nombre">Patitas Felices</p>
+      <p>© 2026 Patitas Felices</p>
+      <p><a href="mailto:hola@patitasfelices.org">hola@patitasfelices.org</a></p>
+      <p><a href="#">Desarrollo: Estudio Huella</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* ===== Página de donaciones ===== */
+
+/* Banner superior */
+.donar-banner {
+  background: var(--verde-claro);
+  padding: 40px 0;
+}
+
+.donar-banner .contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.donar-banner h1 {
+  font-size: 36px;
+  line-height: 1.15;
+  margin-bottom: 12px;
+}
+
+.donar-texto .texto-gris {
+  margin-bottom: 20px;
+}
+
+.donar-banner img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Tres bloques informativos */
+.bloques-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.bloque-info {
+  background: var(--blanco);
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bloque-info .icono {
+  font-size: 26px;
+}
+
+.bloque-info h3 {
+  margin: 8px 0;
+}
+
+.bloque-info ul {
+  padding-left: 20px;
+}
+
+/* Formulario de donación (solo maqueta) */
+.donar-formulario-seccion {
+  background: var(--durazno);
+}
+
+.donar-form {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 24px;
+  background: var(--blanco);
+  border-radius: 16px;
+}
+
+.donar-form h2 {
+  margin-bottom: 4px;
+}
+
+.donar-form .texto-gris {
+  margin-bottom: 16px;
+}
+
+.campo {
+  margin-bottom: 16px;
+}
+
+.campo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.campo input,
+.campo select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #bfb5a8;
+  border-radius: 10px;
+  font-family: var(--fuente);
+  font-size: 16px;
+}
+
+.campo input:focus,
+.campo select:focus {
+  border-color: var(--naranja);
+  outline: 2px solid var(--naranja);
+}
+
+.donar-form .boton {
+  width: 100%;
+  font-family: var(--fuente);
+  font-size: 16px;
+}
+
+/* ===== Media queries ===== */
+
+/* Tablet: banner y bloques en fila */
+@media (min-width: 768px) {
+  .donar-banner .contenedor {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .donar-texto,
+  .donar-banner img {
+    flex: 1;
+  }
+
+  .donar-banner img {
+    height: 320px;
+  }
+
+  .bloques-info {
+    flex-direction: row;
+  }
+
+  .bloque-info {
+    flex: 1;
+  }
+
+  .donar-form {
+    padding: 32px;
+  }
+}
+
+/* Computador */
+@media (min-width: 1024px) {
+  .donar-banner h1 {
+    font-size: 52px;
+  }
+
+  .donar-banner img {
+    height: 380px;
+  }
+}

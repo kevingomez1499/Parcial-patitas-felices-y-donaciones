@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil · Patitas Felices</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/iconos.css">
+  <link rel="stylesheet" href="../css/perfil.css">
+</head>
+<body>
+
+  <!-- Encabezado con logo y menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="../index.html"><span class="icono icono-huella" aria-hidden="true"></span> Patitas Felices</a>
+
+      <!-- Menú hamburguesa: el checkbox está escondido y el label (las 3 rayitas) lo marca o desmarca -->
+      <input type="checkbox" id="menu-check" class="menu-check" aria-label="Abrir o cerrar el menú">
+      <label for="menu-check" class="hamburguesa"><span></span><span></span><span></span></label>
+
+      <nav class="menu-nav">
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="adopta.html" class="activo">Adopta</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="contacto.html">Voluntariado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ===== Luna ===== -->
+    <article class="perfil-animal" id="luna">
+
+      <!-- Tarjeta principal del animal -->
+      <section>
+        <div class="contenedor">
+          <a class="volver" href="adopta.html">← Volver al catálogo</a>
+          <div class="perfil-card">
+            <div class="perfil-foto">
+              <img src="../storage/img/luna.jpg" alt="Luna, perra mestiza de pelaje dorado sentada entre plantas">
+              <span class="estado disponible insignia">Disponible para adopción</span>
+            </div>
+            <div class="perfil-resumen">
+              <p class="etiqueta">PERRA · MESTIZA</p>
+              <h1>Hola, soy Luna.</h1>
+              <p class="frase">Experta en paseos tranquilos, miradas tiernas y siestas cerca de ti.</p>
+
+              <!-- Datos rápidos -->
+              <div class="datos-rapidos">
+                <div class="dato"><span>Edad</span><strong>2 años</strong></div>
+                <div class="dato"><span>Sexo</span><strong>Hembra</strong></div>
+                <div class="dato"><span>Tamaño</span><strong>Mediana</strong></div>
+                <div class="dato"><span>Raza</span><strong>Mestiza</strong></div>
+              </div>
+
+              <!-- Personalidad -->
+              <ul class="rasgos">
+            <li>Tranquila</li>
+            <li>Sociable con perros</li>
+            <li>Cariñosa a su tiempo</li>
+              </ul>
+
+              <a class="boton boton-principal boton-grande" href="contacto.html">Solicitar adopción</a>
+          <p class="nota">La solicitud no es un compromiso. Es el primer paso para conocernos y resolver tus dudas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia, salud y hogar ideal -->
+      <section class="detalle seccion">
+        <div class="contenedor detalle-columnas">
+          <div class="historia">
+            <p class="etiqueta">MÁS ALLÁ DE UNA FOTO</p>
+            <h2>La historia de Luna</h2>
+          <p>Luna llegó al refugio algo tímida, pero con muchas ganas de confiar. Con paciencia, rutinas suaves y paseos al aire libre, empezó a enseñarnos su lado más curioso y cariñoso.</p>
+          <p>Le encanta olfatear cada rincón del jardín y buscar una mano amiga al terminar el día. Ahora busca una familia que entienda que los mejores vínculos se construyen sin prisas.</p>
+          </div>
+          <div class="cajas">
+            <div class="caja caja-salud">
+              <h2>Cuidada por dentro y por fuera</h2>
+              <ul class="lista-check">
+              <li><span class="icono icono-check" aria-hidden="true"></span> Vacunas al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Desparasitación al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Esterilizada</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Revisión veterinaria favorable</li>
+              </ul>
+            </div>
+            <div class="caja caja-hogar">
+              <h2>Su hogar ideal</h2>
+              <p>Una familia con tiempo para pasear, paciencia para acompañarla y un espacio tranquilo para descansar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción -->
+      <section class="banda">
+        <div class="contenedor">
+          <div>
+            <h2>¿Y si su próximo hogar es el tuyo?</h2>
+            <p class="texto-gris">Cuéntanos sobre ti. Te acompañamos en cada paso de la adopción.</p>
+          </div>
+          <a class="boton boton-principal" href="contacto.html">Solicitar adopción</a>
+        </div>
+      </section>
+
+      <!-- Sugerencias: 3 animales más -->
+      <section class="seccion">
+        <div class="contenedor">
+          <p class="etiqueta">OTRAS HUELLAS, OTRAS HISTORIAS</p>
+          <h2 class="titulo">También esperan conocerte.</h2>
+          <div class="sugerencias">
+            <a class="sugerencia" href="#milo">
+              <img src="../storage/img/milo.jpg" alt="Milo, gato naranja sobre una manta">
+              <div class="sugerencia-info">
+                <h3>Milo</h3>
+                <p class="texto-gris">1 año · Pequeño<br>Europeo</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#nala">
+              <img src="../storage/img/nala.jpg" alt="Nala, perra blanca y negra sobre el césped">
+              <div class="sugerencia-info">
+                <h3>Nala</h3>
+                <p class="texto-gris">3 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#kira">
+              <img src="../storage/img/kira.jpg" alt="Kira, gatita de tres colores en una cesta">
+              <div class="sugerencia-info">
+                <h3>Kira</h3>
+                <p class="texto-gris">8 meses · Pequeña<br>Gata común</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- ===== Milo ===== -->
+    <article class="perfil-animal" id="milo">
+
+      <!-- Tarjeta principal del animal -->
+      <section>
+        <div class="contenedor">
+          <a class="volver" href="adopta.html">← Volver al catálogo</a>
+          <div class="perfil-card">
+            <div class="perfil-foto">
+              <img src="../storage/img/milo.jpg" alt="Milo, gato naranja sobre una manta">
+              <span class="estado disponible insignia">Disponible para adopción</span>
+            </div>
+            <div class="perfil-resumen">
+              <p class="etiqueta">GATO · EUROPEO</p>
+              <h1>Hola, soy Milo.</h1>
+              <p class="frase">Curioso profesional y amante de los rayos de sol.</p>
+
+              <!-- Datos rápidos -->
+              <div class="datos-rapidos">
+                <div class="dato"><span>Edad</span><strong>1 año</strong></div>
+                <div class="dato"><span>Sexo</span><strong>Macho</strong></div>
+                <div class="dato"><span>Tamaño</span><strong>Pequeño</strong></div>
+                <div class="dato"><span>Raza</span><strong>Europeo</strong></div>
+              </div>
+
+              <!-- Personalidad -->
+              <ul class="rasgos">
+            <li>Juguetón</li>
+            <li>Curioso</li>
+            <li>Mimoso</li>
+              </ul>
+
+              <a class="boton boton-principal boton-grande" href="contacto.html">Solicitar adopción</a>
+          <p class="nota">La solicitud no es un compromiso. Es el primer paso para conocernos y resolver tus dudas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia, salud y hogar ideal -->
+      <section class="detalle seccion">
+        <div class="contenedor detalle-columnas">
+          <div class="historia">
+            <p class="etiqueta">MÁS ALLÁ DE UNA FOTO</p>
+            <h2>La historia de Milo</h2>
+          <p>Milo apareció una tarde lluviosa en la puerta del refugio, maullando bajito. Hoy pasa los días persiguiendo plumas, escalando cada estante y ronroneando apenas alguien se sienta a su lado.</p>
+          <p>Busca un hogar con ventanas luminosas donde pueda mirar el mundo desde su rincón favorito.</p>
+          </div>
+          <div class="cajas">
+            <div class="caja caja-salud">
+              <h2>Cuidado por dentro y por fuera</h2>
+              <ul class="lista-check">
+              <li><span class="icono icono-check" aria-hidden="true"></span> Vacunas al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Desparasitación al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Esterilizado</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Revisión veterinaria favorable</li>
+              </ul>
+            </div>
+            <div class="caja caja-hogar">
+              <h2>Su hogar ideal</h2>
+              <p>Una familia con tiempo para jugar, un rascador y ventanas con buena vista. Se lleva bien con niños tranquilos.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción -->
+      <section class="banda">
+        <div class="contenedor">
+          <div>
+            <h2>¿Y si su próximo hogar es el tuyo?</h2>
+            <p class="texto-gris">Cuéntanos sobre ti. Te acompañamos en cada paso de la adopción.</p>
+          </div>
+          <a class="boton boton-principal" href="contacto.html">Solicitar adopción</a>
+        </div>
+      </section>
+
+      <!-- Sugerencias: 3 animales más -->
+      <section class="seccion">
+        <div class="contenedor">
+          <p class="etiqueta">OTRAS HUELLAS, OTRAS HISTORIAS</p>
+          <h2 class="titulo">También esperan conocerte.</h2>
+          <div class="sugerencias">
+            <a class="sugerencia" href="#nala">
+              <img src="../storage/img/nala.jpg" alt="Nala, perra blanca y negra sobre el césped">
+              <div class="sugerencia-info">
+                <h3>Nala</h3>
+                <p class="texto-gris">3 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#kira">
+              <img src="../storage/img/kira.jpg" alt="Kira, gatita de tres colores en una cesta">
+              <div class="sugerencia-info">
+                <h3>Kira</h3>
+                <p class="texto-gris">8 meses · Pequeña<br>Gata común</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#toby">
+              <img src="../storage/img/toby.jpg" alt="Toby, perro pequeño de orejas grandes">
+              <div class="sugerencia-info">
+                <h3>Toby</h3>
+                <p class="texto-gris">4 años · Pequeño<br>Podenco mestizo</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- ===== Nala ===== -->
+    <article class="perfil-animal" id="nala">
+
+      <!-- Tarjeta principal del animal -->
+      <section>
+        <div class="contenedor">
+          <a class="volver" href="adopta.html">← Volver al catálogo</a>
+          <div class="perfil-card">
+            <div class="perfil-foto">
+              <img src="../storage/img/nala.jpg" alt="Nala, perra blanca y negra sobre el césped">
+              <span class="estado disponible insignia">Disponible para adopción</span>
+            </div>
+            <div class="perfil-resumen">
+              <p class="etiqueta">PERRA · MESTIZA</p>
+              <h1>Hola, soy Nala.</h1>
+              <p class="frase">Energía de sobra y una sonrisa que contagia.</p>
+
+              <!-- Datos rápidos -->
+              <div class="datos-rapidos">
+                <div class="dato"><span>Edad</span><strong>3 años</strong></div>
+                <div class="dato"><span>Sexo</span><strong>Hembra</strong></div>
+                <div class="dato"><span>Tamaño</span><strong>Mediana</strong></div>
+                <div class="dato"><span>Raza</span><strong>Mestiza</strong></div>
+              </div>
+
+              <!-- Personalidad -->
+              <ul class="rasgos">
+            <li>Juguetona</li>
+            <li>Enérgica</li>
+            <li>Sociable</li>
+              </ul>
+
+              <a class="boton boton-principal boton-grande" href="contacto.html">Solicitar adopción</a>
+          <p class="nota">La solicitud no es un compromiso. Es el primer paso para conocernos y resolver tus dudas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia, salud y hogar ideal -->
+      <section class="detalle seccion">
+        <div class="contenedor detalle-columnas">
+          <div class="historia">
+            <p class="etiqueta">MÁS ALLÁ DE UNA FOTO</p>
+            <h2>La historia de Nala</h2>
+          <p>Nala fue rescatada de un patio donde pasaba muchas horas sola. Aprendió a confiar muy rápido y ahora no hay pelota que se le escape.</p>
+          <p>Necesita paseos largos y alguien que disfrute corriendo con ella por el parque.</p>
+          </div>
+          <div class="cajas">
+            <div class="caja caja-salud">
+              <h2>Cuidada por dentro y por fuera</h2>
+              <ul class="lista-check">
+              <li><span class="icono icono-check" aria-hidden="true"></span> Vacunas al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Desparasitación al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Esterilizada</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Revisión veterinaria favorable</li>
+              </ul>
+            </div>
+            <div class="caja caja-hogar">
+              <h2>Su hogar ideal</h2>
+              <p>Una familia activa, con espacio para jugar y tiempo para salir a caminar todos los días.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción -->
+      <section class="banda">
+        <div class="contenedor">
+          <div>
+            <h2>¿Y si su próximo hogar es el tuyo?</h2>
+            <p class="texto-gris">Cuéntanos sobre ti. Te acompañamos en cada paso de la adopción.</p>
+          </div>
+          <a class="boton boton-principal" href="contacto.html">Solicitar adopción</a>
+        </div>
+      </section>
+
+      <!-- Sugerencias: 3 animales más -->
+      <section class="seccion">
+        <div class="contenedor">
+          <p class="etiqueta">OTRAS HUELLAS, OTRAS HISTORIAS</p>
+          <h2 class="titulo">También esperan conocerte.</h2>
+          <div class="sugerencias">
+            <a class="sugerencia" href="#kira">
+              <img src="../storage/img/kira.jpg" alt="Kira, gatita de tres colores en una cesta">
+              <div class="sugerencia-info">
+                <h3>Kira</h3>
+                <p class="texto-gris">8 meses · Pequeña<br>Gata común</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#toby">
+              <img src="../storage/img/toby.jpg" alt="Toby, perro pequeño de orejas grandes">
+              <div class="sugerencia-info">
+                <h3>Toby</h3>
+                <p class="texto-gris">4 años · Pequeño<br>Podenco mestizo</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#nina">
+              <img src="../storage/img/nina.jpg" alt="Nina, perra marrón de mirada tierna">
+              <div class="sugerencia-info">
+                <h3>Nina</h3>
+                <p class="texto-gris">6 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- ===== Bruno ===== -->
+    <article class="perfil-animal" id="bruno">
+
+      <!-- Tarjeta principal del animal -->
+      <section>
+        <div class="contenedor">
+          <a class="volver" href="adopta.html">← Volver al catálogo</a>
+          <div class="perfil-card">
+            <div class="perfil-foto">
+              <img src="../storage/img/bruno.jpg" alt="Bruno, perro marrón sentado en el jardín">
+              <span class="estado adoptado insignia">Ya encontró hogar</span>
+            </div>
+            <div class="perfil-resumen">
+              <p class="etiqueta">PERRO · LABRADOR MESTIZO</p>
+              <h1>Hola, soy Bruno.</h1>
+              <p class="frase">Grandote, tranquilo y con el corazón más grande del refugio.</p>
+
+              <!-- Datos rápidos -->
+              <div class="datos-rapidos">
+                <div class="dato"><span>Edad</span><strong>5 años</strong></div>
+                <div class="dato"><span>Sexo</span><strong>Macho</strong></div>
+                <div class="dato"><span>Tamaño</span><strong>Grande</strong></div>
+                <div class="dato"><span>Raza</span><strong>Labrador mestizo</strong></div>
+              </div>
+
+              <!-- Personalidad -->
+              <ul class="rasgos">
+            <li>Noble</li>
+            <li>Tranquilo</li>
+            <li>Fiel</li>
+              </ul>
+
+              <p class="aviso-adoptado">¡Ya tiene familia! Conoce a otros amigos que todavía esperan.</p>
+          <a class="boton boton-principal boton-grande" href="adopta.html">Ver animales disponibles</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia, salud y hogar ideal -->
+      <section class="detalle seccion">
+        <div class="contenedor detalle-columnas">
+          <div class="historia">
+            <p class="etiqueta">MÁS ALLÁ DE UNA FOTO</p>
+            <h2>La historia de Bruno</h2>
+          <p>Bruno llegó muy delgado y desconfiado. Con cariño y buena comida se convirtió en el abrazo más grande del refugio.</p>
+          <p>¡Ya encontró su hogar! Su familia cuenta que ahora no imagina el sofá sin él.</p>
+          </div>
+          <div class="cajas">
+            <div class="caja caja-salud">
+              <h2>Cuidado por dentro y por fuera</h2>
+              <ul class="lista-check">
+              <li><span class="icono icono-check" aria-hidden="true"></span> Vacunas al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Desparasitación al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Esterilizado</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Revisión veterinaria favorable</li>
+              </ul>
+            </div>
+            <div class="caja caja-hogar">
+              <h2>Su hogar ideal</h2>
+              <p>Ya encontró una familia que lo quiere mucho.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción -->
+      <section class="banda">
+        <div class="contenedor">
+          <div>
+            <h2>¿Quieres vivir una historia así?</h2>
+            <p class="texto-gris">Otros amigos esperan su oportunidad.</p>
+          </div>
+          <a class="boton boton-principal" href="adopta.html">Ver animales disponibles</a>
+        </div>
+      </section>
+
+      <!-- Sugerencias: 3 animales más -->
+      <section class="seccion">
+        <div class="contenedor">
+          <p class="etiqueta">OTRAS HUELLAS, OTRAS HISTORIAS</p>
+          <h2 class="titulo">También esperan conocerte.</h2>
+          <div class="sugerencias">
+            <a class="sugerencia" href="#kira">
+              <img src="../storage/img/kira.jpg" alt="Kira, gatita de tres colores en una cesta">
+              <div class="sugerencia-info">
+                <h3>Kira</h3>
+                <p class="texto-gris">8 meses · Pequeña<br>Gata común</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#toby">
+              <img src="../storage/img/toby.jpg" alt="Toby, perro pequeño de orejas grandes">
+              <div class="sugerencia-info">
+                <h3>Toby</h3>
+                <p class="texto-gris">4 años · Pequeño<br>Podenco mestizo</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#nina">
+              <img src="../storage/img/nina.jpg" alt="Nina, perra marrón de mirada tierna">
+              <div class="sugerencia-info">
+                <h3>Nina</h3>
+                <p class="texto-gris">6 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- ===== Kira ===== -->
+    <article class="perfil-animal" id="kira">
+
+      <!-- Tarjeta principal del animal -->
+      <section>
+        <div class="contenedor">
+          <a class="volver" href="adopta.html">← Volver al catálogo</a>
+          <div class="perfil-card">
+            <div class="perfil-foto">
+              <img src="../storage/img/kira.jpg" alt="Kira, gatita de tres colores en una cesta">
+              <span class="estado disponible insignia">Disponible para adopción</span>
+            </div>
+            <div class="perfil-resumen">
+              <p class="etiqueta">GATA · COMÚN</p>
+              <h1>Hola, soy Kira.</h1>
+              <p class="frase">Pequeña, curiosa y siempre lista para jugar.</p>
+
+              <!-- Datos rápidos -->
+              <div class="datos-rapidos">
+                <div class="dato"><span>Edad</span><strong>8 meses</strong></div>
+                <div class="dato"><span>Sexo</span><strong>Hembra</strong></div>
+                <div class="dato"><span>Tamaño</span><strong>Pequeña</strong></div>
+                <div class="dato"><span>Raza</span><strong>Gata común</strong></div>
+              </div>
+
+              <!-- Personalidad -->
+              <ul class="rasgos">
+            <li>Curiosa</li>
+            <li>Activa</li>
+            <li>Cariñosa</li>
+              </ul>
+
+              <a class="boton boton-principal boton-grande" href="contacto.html">Solicitar adopción</a>
+          <p class="nota">La solicitud no es un compromiso. Es el primer paso para conocernos y resolver tus dudas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia, salud y hogar ideal -->
+      <section class="detalle seccion">
+        <div class="contenedor detalle-columnas">
+          <div class="historia">
+            <p class="etiqueta">MÁS ALLÁ DE UNA FOTO</p>
+            <h2>La historia de Kira</h2>
+          <p>Kira fue encontrada con sus hermanitos dentro de una caja. Es la más aventurera: explora cada rincón y se duerme en cualquier cesta.</p>
+          <p>Está en la edad de aprender, jugar y crecer junto a una familia paciente.</p>
+          </div>
+          <div class="cajas">
+            <div class="caja caja-salud">
+              <h2>Cuidada por dentro y por fuera</h2>
+              <ul class="lista-check">
+              <li><span class="icono icono-check" aria-hidden="true"></span> Primeras vacunas al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Desparasitación al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Esterilización pendiente por su edad</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Revisión veterinaria favorable</li>
+              </ul>
+            </div>
+            <div class="caja caja-hogar">
+              <h2>Su hogar ideal</h2>
+              <p>Una familia con paciencia y tiempo para acompañar su crecimiento, con juguetes y un lugar seguro para explorar.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción -->
+      <section class="banda">
+        <div class="contenedor">
+          <div>
+            <h2>¿Y si su próximo hogar es el tuyo?</h2>
+            <p class="texto-gris">Cuéntanos sobre ti. Te acompañamos en cada paso de la adopción.</p>
+          </div>
+          <a class="boton boton-principal" href="contacto.html">Solicitar adopción</a>
+        </div>
+      </section>
+
+      <!-- Sugerencias: 3 animales más -->
+      <section class="seccion">
+        <div class="contenedor">
+          <p class="etiqueta">OTRAS HUELLAS, OTRAS HISTORIAS</p>
+          <h2 class="titulo">También esperan conocerte.</h2>
+          <div class="sugerencias">
+            <a class="sugerencia" href="#toby">
+              <img src="../storage/img/toby.jpg" alt="Toby, perro pequeño de orejas grandes">
+              <div class="sugerencia-info">
+                <h3>Toby</h3>
+                <p class="texto-gris">4 años · Pequeño<br>Podenco mestizo</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#nina">
+              <img src="../storage/img/nina.jpg" alt="Nina, perra marrón de mirada tierna">
+              <div class="sugerencia-info">
+                <h3>Nina</h3>
+                <p class="texto-gris">6 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#luna">
+              <img src="../storage/img/luna.jpg" alt="Luna, perra mestiza de pelaje dorado sentada entre plantas">
+              <div class="sugerencia-info">
+                <h3>Luna</h3>
+                <p class="texto-gris">2 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- ===== Toby ===== -->
+    <article class="perfil-animal" id="toby">
+
+      <!-- Tarjeta principal del animal -->
+      <section>
+        <div class="contenedor">
+          <a class="volver" href="adopta.html">← Volver al catálogo</a>
+          <div class="perfil-card">
+            <div class="perfil-foto">
+              <img src="../storage/img/toby.jpg" alt="Toby, perro pequeño de orejas grandes">
+              <span class="estado disponible insignia">Disponible para adopción</span>
+            </div>
+            <div class="perfil-resumen">
+              <p class="etiqueta">PERRO · PODENCO MESTIZO</p>
+              <h1>Hola, soy Toby.</h1>
+              <p class="frase">Orejas gigantes, olfato de detective y cero ganas de quedarse quieto.</p>
+
+              <!-- Datos rápidos -->
+              <div class="datos-rapidos">
+                <div class="dato"><span>Edad</span><strong>4 años</strong></div>
+                <div class="dato"><span>Sexo</span><strong>Macho</strong></div>
+                <div class="dato"><span>Tamaño</span><strong>Pequeño</strong></div>
+                <div class="dato"><span>Raza</span><strong>Podenco mestizo</strong></div>
+              </div>
+
+              <!-- Personalidad -->
+              <ul class="rasgos">
+            <li>Aventurero</li>
+            <li>Atento</li>
+            <li>Leal</li>
+              </ul>
+
+              <a class="boton boton-principal boton-grande" href="contacto.html">Solicitar adopción</a>
+          <p class="nota">La solicitud no es un compromiso. Es el primer paso para conocernos y resolver tus dudas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia, salud y hogar ideal -->
+      <section class="detalle seccion">
+        <div class="contenedor detalle-columnas">
+          <div class="historia">
+            <p class="etiqueta">MÁS ALLÁ DE UNA FOTO</p>
+            <h2>La historia de Toby</h2>
+          <p>Toby vivía en la calle y aprendió a cuidarse solo. En el refugio descubrió que puede confiar en las personas.</p>
+          <p>Le encantan los paseos largos y olfatear cada hoja del camino.</p>
+          </div>
+          <div class="cajas">
+            <div class="caja caja-salud">
+              <h2>Cuidado por dentro y por fuera</h2>
+              <ul class="lista-check">
+              <li><span class="icono icono-check" aria-hidden="true"></span> Vacunas al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Desparasitación al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Esterilizado</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Revisión veterinaria favorable</li>
+              </ul>
+            </div>
+            <div class="caja caja-hogar">
+              <h2>Su hogar ideal</h2>
+              <p>Una familia que disfrute de caminar, con paciencia para enseñarle rutinas y mucho cariño.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción -->
+      <section class="banda">
+        <div class="contenedor">
+          <div>
+            <h2>¿Y si su próximo hogar es el tuyo?</h2>
+            <p class="texto-gris">Cuéntanos sobre ti. Te acompañamos en cada paso de la adopción.</p>
+          </div>
+          <a class="boton boton-principal" href="contacto.html">Solicitar adopción</a>
+        </div>
+      </section>
+
+      <!-- Sugerencias: 3 animales más -->
+      <section class="seccion">
+        <div class="contenedor">
+          <p class="etiqueta">OTRAS HUELLAS, OTRAS HISTORIAS</p>
+          <h2 class="titulo">También esperan conocerte.</h2>
+          <div class="sugerencias">
+            <a class="sugerencia" href="#nina">
+              <img src="../storage/img/nina.jpg" alt="Nina, perra marrón de mirada tierna">
+              <div class="sugerencia-info">
+                <h3>Nina</h3>
+                <p class="texto-gris">6 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#luna">
+              <img src="../storage/img/luna.jpg" alt="Luna, perra mestiza de pelaje dorado sentada entre plantas">
+              <div class="sugerencia-info">
+                <h3>Luna</h3>
+                <p class="texto-gris">2 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#milo">
+              <img src="../storage/img/milo.jpg" alt="Milo, gato naranja sobre una manta">
+              <div class="sugerencia-info">
+                <h3>Milo</h3>
+                <p class="texto-gris">1 año · Pequeño<br>Europeo</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- ===== Coco ===== -->
+    <article class="perfil-animal" id="coco">
+
+      <!-- Tarjeta principal del animal -->
+      <section>
+        <div class="contenedor">
+          <a class="volver" href="adopta.html">← Volver al catálogo</a>
+          <div class="perfil-card">
+            <div class="perfil-foto">
+              <img src="../storage/img/coco.jpg" alt="Coco, gato gris sobre un cojín">
+              <span class="estado adoptado insignia">Ya encontró hogar</span>
+            </div>
+            <div class="perfil-resumen">
+              <p class="etiqueta">GATO · EUROPEO</p>
+              <h1>Hola, soy Coco.</h1>
+              <p class="frase">Silencioso, elegante y fan de las siestas.</p>
+
+              <!-- Datos rápidos -->
+              <div class="datos-rapidos">
+                <div class="dato"><span>Edad</span><strong>2 años</strong></div>
+                <div class="dato"><span>Sexo</span><strong>Macho</strong></div>
+                <div class="dato"><span>Tamaño</span><strong>Pequeño</strong></div>
+                <div class="dato"><span>Raza</span><strong>Europeo</strong></div>
+              </div>
+
+              <!-- Personalidad -->
+              <ul class="rasgos">
+            <li>Tranquilo</li>
+            <li>Independiente</li>
+            <li>Mimoso</li>
+              </ul>
+
+              <p class="aviso-adoptado">¡Ya tiene familia! Conoce a otros amigos que todavía esperan.</p>
+          <a class="boton boton-principal boton-grande" href="adopta.html">Ver animales disponibles</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia, salud y hogar ideal -->
+      <section class="detalle seccion">
+        <div class="contenedor detalle-columnas">
+          <div class="historia">
+            <p class="etiqueta">MÁS ALLÁ DE UNA FOTO</p>
+            <h2>La historia de Coco</h2>
+          <p>Coco llegó al refugio muy callado. Poco a poco se animó a pedir caricias y a dormir cerca de las personas.</p>
+          <p>¡Ya tiene hogar! Su familia cuenta que el día que se durmió a su lado supieron que ya estaba en casa.</p>
+          </div>
+          <div class="cajas">
+            <div class="caja caja-salud">
+              <h2>Cuidado por dentro y por fuera</h2>
+              <ul class="lista-check">
+              <li><span class="icono icono-check" aria-hidden="true"></span> Vacunas al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Desparasitación al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Esterilizado</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Revisión veterinaria favorable</li>
+              </ul>
+            </div>
+            <div class="caja caja-hogar">
+              <h2>Su hogar ideal</h2>
+              <p>Ya encontró una familia que lo quiere mucho.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción -->
+      <section class="banda">
+        <div class="contenedor">
+          <div>
+            <h2>¿Quieres vivir una historia así?</h2>
+            <p class="texto-gris">Otros amigos esperan su oportunidad.</p>
+          </div>
+          <a class="boton boton-principal" href="adopta.html">Ver animales disponibles</a>
+        </div>
+      </section>
+
+      <!-- Sugerencias: 3 animales más -->
+      <section class="seccion">
+        <div class="contenedor">
+          <p class="etiqueta">OTRAS HUELLAS, OTRAS HISTORIAS</p>
+          <h2 class="titulo">También esperan conocerte.</h2>
+          <div class="sugerencias">
+            <a class="sugerencia" href="#nina">
+              <img src="../storage/img/nina.jpg" alt="Nina, perra marrón de mirada tierna">
+              <div class="sugerencia-info">
+                <h3>Nina</h3>
+                <p class="texto-gris">6 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#luna">
+              <img src="../storage/img/luna.jpg" alt="Luna, perra mestiza de pelaje dorado sentada entre plantas">
+              <div class="sugerencia-info">
+                <h3>Luna</h3>
+                <p class="texto-gris">2 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#milo">
+              <img src="../storage/img/milo.jpg" alt="Milo, gato naranja sobre una manta">
+              <div class="sugerencia-info">
+                <h3>Milo</h3>
+                <p class="texto-gris">1 año · Pequeño<br>Europeo</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- ===== Nina ===== -->
+    <article class="perfil-animal" id="nina">
+
+      <!-- Tarjeta principal del animal -->
+      <section>
+        <div class="contenedor">
+          <a class="volver" href="adopta.html">← Volver al catálogo</a>
+          <div class="perfil-card">
+            <div class="perfil-foto">
+              <img src="../storage/img/nina.jpg" alt="Nina, perra marrón de mirada tierna">
+              <span class="estado disponible insignia">Disponible para adopción</span>
+            </div>
+            <div class="perfil-resumen">
+              <p class="etiqueta">PERRA · MESTIZA</p>
+              <h1>Hola, soy Nina.</h1>
+              <p class="frase">Sabia, serena y experta en acompañar.</p>
+
+              <!-- Datos rápidos -->
+              <div class="datos-rapidos">
+                <div class="dato"><span>Edad</span><strong>6 años</strong></div>
+                <div class="dato"><span>Sexo</span><strong>Hembra</strong></div>
+                <div class="dato"><span>Tamaño</span><strong>Mediana</strong></div>
+                <div class="dato"><span>Raza</span><strong>Mestiza</strong></div>
+              </div>
+
+              <!-- Personalidad -->
+              <ul class="rasgos">
+            <li>Serena</li>
+            <li>Obediente</li>
+            <li>Cariñosa</li>
+              </ul>
+
+              <a class="boton boton-principal boton-grande" href="contacto.html">Solicitar adopción</a>
+          <p class="nota">La solicitud no es un compromiso. Es el primer paso para conocernos y resolver tus dudas.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Historia, salud y hogar ideal -->
+      <section class="detalle seccion">
+        <div class="contenedor detalle-columnas">
+          <div class="historia">
+            <p class="etiqueta">MÁS ALLÁ DE UNA FOTO</p>
+            <h2>La historia de Nina</h2>
+          <p>Nina pasó muchos años en un hogar que ya no pudo cuidarla. En el refugio es la favorita de los voluntarios por su calma.</p>
+          <p>Disfruta de paseos cortos y de dormir cerca de su gente.</p>
+          </div>
+          <div class="cajas">
+            <div class="caja caja-salud">
+              <h2>Cuidada por dentro y por fuera</h2>
+              <ul class="lista-check">
+              <li><span class="icono icono-check" aria-hidden="true"></span> Vacunas al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Desparasitación al día</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Esterilizada</li>
+              <li><span class="icono icono-check" aria-hidden="true"></span> Revisión veterinaria favorable</li>
+              </ul>
+            </div>
+            <div class="caja caja-hogar">
+              <h2>Su hogar ideal</h2>
+              <p>Una familia tranquila, con ganas de compartir paseos suaves y tardes de descanso.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Llamada a la acción -->
+      <section class="banda">
+        <div class="contenedor">
+          <div>
+            <h2>¿Y si su próximo hogar es el tuyo?</h2>
+            <p class="texto-gris">Cuéntanos sobre ti. Te acompañamos en cada paso de la adopción.</p>
+          </div>
+          <a class="boton boton-principal" href="contacto.html">Solicitar adopción</a>
+        </div>
+      </section>
+
+      <!-- Sugerencias: 3 animales más -->
+      <section class="seccion">
+        <div class="contenedor">
+          <p class="etiqueta">OTRAS HUELLAS, OTRAS HISTORIAS</p>
+          <h2 class="titulo">También esperan conocerte.</h2>
+          <div class="sugerencias">
+            <a class="sugerencia" href="#luna">
+              <img src="../storage/img/luna.jpg" alt="Luna, perra mestiza de pelaje dorado sentada entre plantas">
+              <div class="sugerencia-info">
+                <h3>Luna</h3>
+                <p class="texto-gris">2 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#milo">
+              <img src="../storage/img/milo.jpg" alt="Milo, gato naranja sobre una manta">
+              <div class="sugerencia-info">
+                <h3>Milo</h3>
+                <p class="texto-gris">1 año · Pequeño<br>Europeo</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+            <a class="sugerencia" href="#nala">
+              <img src="../storage/img/nala.jpg" alt="Nala, perra blanca y negra sobre el césped">
+              <div class="sugerencia-info">
+                <h3>Nala</h3>
+                <p class="texto-gris">3 años · Mediana<br>Mestiza</p>
+                <span class="estado disponible">Disponible</span>
+                <span class="sugerencia-link">Ver perfil</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </article>
+
+    <!-- Se ve solo si se entra a perfil.html sin elegir un animal -->
+    <div class="sin-seleccion">
+      <div class="contenedor">
+        <h1>Elige a un amigo para conocerlo</h1>
+        <p class="texto-gris">Entra desde el catálogo y toca “Ver perfil” en el animal que quieras conocer.</p>
+        <a class="boton boton-principal" href="adopta.html">Ir al catálogo</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p class="pie-nombre">Patitas Felices</p>
+      <p>© 2026 Patitas Felices</p>
+      <p><a href="mailto:hola@patitasfelices.org">hola@patitasfelices.org</a></p>
+      <p><a href="#">Desarrollo: Estudio Huella</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopta · Patitas Felices</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/iconos.css">
+  <link rel="stylesheet" href="../css/adopta.css">
+</head>
+<body>
+
+  <!-- Encabezado con logo y menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="../index.html"><span class="icono icono-huella" aria-hidden="true"></span> Patitas Felices</a>
+
+      <!-- Menú hamburguesa: el checkbox está escondido y el label (las 3 rayitas) lo marca o desmarca -->
+      <input type="checkbox" id="menu-check" class="menu-check" aria-label="Abrir o cerrar el menú">
+      <label for="menu-check" class="hamburguesa"><span></span><span></span><span></span></label>
+
+      <nav class="menu-nav">
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="adopta.html" class="activo">Adopta</a></li>
+            <li><a href="donaciones.html">Donaciones</a></li>
+            <li><a href="contacto.html">Voluntariado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Título de la página -->
+    <section class="encabezado-adopta">
+      <div class="contenedor">
+        <p class="etiqueta">ADOPTAR ES EMPEZAR JUNTOS</p>
+        <h1>Hay un amigo esperando por ti.</h1>
+        <p class="texto-gris">Conoce sus historias, descubre su carácter y encuentra a ese compañero con el que compartir la vida.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="contenedor">
+
+        <!-- Filtros (solo visuales) -->
+        <h2 class="titulo">Encuentra a tu compañero</h2>
+        <form class="filtros">
+        <div>
+          <label for="especie">Especie</label>
+          <select id="especie">
+            <option>Todas las especies</option>
+            <option>Perros</option>
+            <option>Gatos</option>
+          </select>
+        </div>
+        <div>
+          <label for="edad">Edad</label>
+          <select id="edad">
+            <option>Todas las edades</option>
+            <option>Cachorro</option>
+            <option>Joven</option>
+            <option>Adulto</option>
+          </select>
+        </div>
+        <div>
+          <label for="tamano">Tamaño</label>
+          <select id="tamano">
+            <option>Todos los tamaños</option>
+            <option>Pequeño</option>
+            <option>Mediano</option>
+            <option>Grande</option>
+          </select>
+        </div>
+        <div>
+          <label for="estado">Estado</label>
+          <select id="estado">
+            <option>Todos los estados</option>
+            <option>Disponible</option>
+            <option>Adoptado</option>
+          </select>
+        </div>
+        </form>
+
+        <!-- Catálogo: 8 animales -->
+        <div class="grilla-animales">
+          <article class="tarjeta">
+            <img src="../storage/img/luna.jpg" alt="Luna, perra mestiza de pelaje dorado">
+            <div class="tarjeta-info">
+              <h3>Luna</h3>
+              <p class="texto-gris">2 años · Mediana<br>Mestiza</p>
+              <span class="estado disponible">Disponible</span>
+              <a class="boton boton-secundario" href="perfil.html#luna">Ver perfil</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="../storage/img/milo.jpg" alt="Milo, gato naranja sobre una manta">
+            <div class="tarjeta-info">
+              <h3>Milo</h3>
+              <p class="texto-gris">1 año · Pequeño<br>Europeo</p>
+              <span class="estado disponible">Disponible</span>
+              <a class="boton boton-secundario" href="perfil.html#milo">Ver perfil</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="../storage/img/nala.jpg" alt="Nala, perra blanca y negra sobre el césped">
+            <div class="tarjeta-info">
+              <h3>Nala</h3>
+              <p class="texto-gris">3 años · Mediana<br>Mestiza</p>
+              <span class="estado disponible">Disponible</span>
+              <a class="boton boton-secundario" href="perfil.html#nala">Ver perfil</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="../storage/img/bruno.jpg" alt="Bruno, perro marrón sentado en el jardín">
+            <div class="tarjeta-info">
+              <h3>Bruno</h3>
+              <p class="texto-gris">5 años · Grande<br>Labrador mestizo</p>
+              <span class="estado adoptado">Adoptado</span>
+              <a class="boton boton-secundario" href="perfil.html#bruno">Ver perfil</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="../storage/img/kira.jpg" alt="Kira, gatita de tres colores en una cesta">
+            <div class="tarjeta-info">
+              <h3>Kira</h3>
+              <p class="texto-gris">8 meses · Pequeña<br>Gata común</p>
+              <span class="estado disponible">Disponible</span>
+              <a class="boton boton-secundario" href="perfil.html#kira">Ver perfil</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="../storage/img/toby.jpg" alt="Toby, perro pequeño de orejas grandes">
+            <div class="tarjeta-info">
+              <h3>Toby</h3>
+              <p class="texto-gris">4 años · Pequeño<br>Podenco mestizo</p>
+              <span class="estado disponible">Disponible</span>
+              <a class="boton boton-secundario" href="perfil.html#toby">Ver perfil</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="../storage/img/coco.jpg" alt="Coco, gato gris sobre un cojín">
+            <div class="tarjeta-info">
+              <h3>Coco</h3>
+              <p class="texto-gris">2 años · Pequeño<br>Europeo</p>
+              <span class="estado adoptado">Adoptado</span>
+              <a class="boton boton-secundario" href="perfil.html#coco">Ver perfil</a>
+            </div>
+          </article>
+
+          <article class="tarjeta">
+            <img src="../storage/img/nina.jpg" alt="Nina, perra marrón de mirada tierna">
+            <div class="tarjeta-info">
+              <h3>Nina</h3>
+              <p class="texto-gris">6 años · Mediana<br>Mestiza</p>
+              <span class="estado disponible">Disponible</span>
+              <a class="boton boton-secundario" href="perfil.html#nina">Ver perfil</a>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Pasos para adoptar -->
+    <section class="pasos seccion">
+      <div class="contenedor">
+        <p class="etiqueta">PASO A PASO, CONTIGO</p>
+        <h2 class="titulo">Una decisión con mucho corazón.</h2>
+        <div class="lista-pasos">
+          <div class="paso">
+            <p class="numero">1</p>
+            <h3>Conoce su historia</h3>
+            <p class="texto-gris">Lee su perfil y piensa en cómo encajaría en tu día a día.</p>
+          </div>
+          <div class="paso">
+            <p class="numero">2</p>
+            <h3>Hablemos de vosotros</h3>
+            <p class="texto-gris">Envíanos una solicitud. Queremos conocer tus dudas y expectativas.</p>
+          </div>
+          <div class="paso">
+            <p class="numero">3</p>
+            <h3>Conócele sin prisas</h3>
+            <p class="texto-gris">Acordamos un encuentro y te acompañamos en la adaptación.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p class="pie-nombre">Patitas Felices</p>
+      <p>© 2026 Patitas Felices</p>
+      <p><a href="mailto:hola@patitasfelices.org">hola@patitasfelices.org</a></p>
+      <p><a href="#">Desarrollo: Estudio Huella</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>

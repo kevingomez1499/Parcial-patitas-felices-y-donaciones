@@ -1,0 +1,53 @@
+/* ===== Iconos hechos con CSS =====
+   Cada icono es un archivo .svg pequeño (carpeta storage/icons) que se pone como imagen de fondo.
+   Uso en el HTML: <span class="icono icono-huella"></span>
+   El tamaño se cambia con font-size en el contenedor. */
+.icono {
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.icono-huella {
+  background-image: url(../storage/icons/huella.svg);
+}
+
+.icono-casa {
+  background-image: url(../storage/icons/casa.svg);
+}
+
+.icono-cruz {
+  background-image: url(../storage/icons/cruz.svg);
+}
+
+.icono-corazon {
+  background-image: url(../storage/icons/corazon.svg);
+}
+
+.icono-sol {
+  background-image: url(../storage/icons/sol.svg);
+}
+
+.icono-check {
+  background-image: url(../storage/icons/check.svg);
+}
+
+.icono-hoja {
+  background-image: url(../storage/icons/hoja.svg);
+}
+
+.icono-correo {
+  background-image: url(../storage/icons/correo.svg);
+}
+
+.icono-telefono {
+  background-image: url(../storage/icons/telefono.svg);
+}
+
+.icono-reloj {
+  background-image: url(../storage/icons/reloj.svg);
+}

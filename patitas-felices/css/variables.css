@@ -1,0 +1,15 @@
+/* Variables: aquí guardo los colores y la fuente para usarlos en todos los archivos */
+:root {
+  --crema: #fdf5ec;
+  --blanco: #ffffff;
+  --verde-claro: #dde8d3;
+  --verde-oscuro: #2f5d43;
+  --durazno: #fae3d6;
+  --naranja: #b8431f;
+  --naranja-oscuro: #9a3517;
+  --texto: #2d3a33;
+  --gris: #5f6862;
+  --rojo: #c0392b;
+  --verde: #2f7d4f;
+  --fuente: "Nunito", Arial, sans-serif;
+}

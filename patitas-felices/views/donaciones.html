@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donaciones · Patitas Felices</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/iconos.css">
+  <link rel="stylesheet" href="../css/donaciones.css">
+</head>
+<body>
+
+  <!-- Encabezado con logo y menú -->
+  <header class="encabezado">
+    <div class="contenedor">
+      <a class="logo" href="../index.html"><span class="icono icono-huella" aria-hidden="true"></span> Patitas Felices</a>
+
+      <!-- Menú hamburguesa: el checkbox está escondido y el label (las 3 rayitas) lo marca o desmarca -->
+      <input type="checkbox" id="menu-check" class="menu-check" aria-label="Abrir o cerrar el menú">
+      <label for="menu-check" class="hamburguesa"><span></span><span></span><span></span></label>
+
+      <nav class="menu-nav">
+        <ul class="menu">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><a href="adopta.html">Adopta</a></li>
+            <li><a href="donaciones.html" class="activo">Donaciones</a></li>
+            <li><a href="contacto.html">Voluntariado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. Banner superior -->
+    <section class="donar-banner">
+      <div class="contenedor">
+        <div class="donar-texto">
+          <p class="etiqueta">DONACIONES</p>
+          <h1>Ayúdanos a cambiar vidas</h1>
+          <p class="texto-gris">Cada aporte, grande o pequeño, le da comida, cuidados y una segunda oportunidad a un animal rescatado.</p>
+          <a class="boton boton-principal" href="#formulario">Donar ahora</a>
+        </div>
+        <img src="../storage/img/donaciones-banner.jpg" alt="Voluntaria abrazando a un perro rescatado">
+      </div>
+    </section>
+
+    <!-- 2. Información: tres bloques -->
+    <section class="seccion">
+      <div class="contenedor">
+        <p class="etiqueta">TU AYUDA IMPORTA</p>
+        <h2 class="titulo">Así ayudas a Patitas Felices</h2>
+        <div class="bloques-info">
+          <div class="bloque-info">
+            <span class="icono icono-corazon" aria-hidden="true"></span>
+            <h3>¿Por qué donar?</h3>
+            <p class="texto-gris">Somos una fundación sin ánimo de lucro y vivimos de la ayuda de la comunidad. Tu aporte nos permite rescatar, cuidar y encontrar hogar a más animales.</p>
+          </div>
+          <div class="bloque-info">
+            <span class="icono icono-casa" aria-hidden="true"></span>
+            <h3>¿Cómo usamos las donaciones?</h3>
+            <ul class="texto-gris">
+              <li>Alimento y refugio</li>
+              <li>Atención veterinaria y vacunas</li>
+              <li>Esterilización</li>
+              <li>Campañas de adopción</li>
+            </ul>
+          </div>
+          <div class="bloque-info">
+            <span class="icono icono-huella" aria-hidden="true"></span>
+            <h3>¿Qué logra tu aporte?</h3>
+            <p class="texto-gris">Un aporte pequeño ayuda a alimentar a un animal durante varios días; uno mediano cubre sus vacunas; y uno grande puede pagar una cirugía. (Ejemplos ilustrativos.)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Formulario de donación (simulación, no procesa pagos) -->
+    <section class="donar-formulario-seccion seccion" id="formulario">
+      <div class="contenedor">
+        <form class="donar-form" action="#" method="get">
+          <h2>Haz tu donación</h2>
+          <p class="texto-gris">Simulación: no se procesa ningún pago.</p>
+        <div class="campo">
+          <label for="nombre">Nombre completo</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+        </div>
+        <div class="campo">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@ejemplo.com" required>
+        </div>
+        <div class="campo">
+          <label for="monto">Monto de donación</label>
+          <input type="number" id="monto" name="monto" placeholder="Ej. 20" required min="1">
+        </div>
+        <div class="campo">
+          <label for="metodo">Método de donación</label>
+          <select id="metodo" name="metodo" required>
+            <option value="">Selecciona una opción</option>
+            <option>Transferencia</option>
+            <option>Tarjeta</option>
+            <option>Efectivo</option>
+          </select>
+        </div>
+          <button class="boton boton-principal" type="submit">Donar ahora</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="pie">
+    <div class="contenedor pie-contenido">
+      <p class="pie-nombre">Patitas Felices</p>
+      <p>© 2026 Patitas Felices</p>
+      <p><a href="mailto:hola@patitasfelices.org">hola@patitasfelices.org</a></p>
+      <p><a href="#">Desarrollo: Estudio Huella</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
